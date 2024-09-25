@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" >
+<test thread-count="5" name="Test1">
+      <packages>
+      <package name="com.pom.hrm.testcases">
+      <exclude name="com.pom.hrm.testcases.HRM_LoginTests"></exclude>
+      </package>
+      
+      </packages>
+      </test>
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name ="com.pom.hrm.testcases.HRM_RecruitmentTest">
+     
+     
+      </class>
+      </classes>
+      
+     
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
